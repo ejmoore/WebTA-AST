@@ -1,0 +1,24 @@
+#1 package ast ; 
+#2 import java . util . ArrayList ; 
+#3 import java . io . PrintWriter ; 
+#4 import java . util . Scanner ; 
+#5 import java . util .  *  ; 
+#6 
+#7 
+#8 public class Sample { 
+#9 	int a ; 
+#10 	static int b  =  4 ; 
+#11 	public static void main ( String [  ]  args )  throws ClassNotFoundException { 
+#12 		int c  =  5 ; 
+#13 		int d  =  6 ; 
+#14 		 //d = f;
+#15 		if ( c  ==  5 )  { 
+#16 			int e ; 
+#17 		 } 
+#18 		if ( d  ==  5 )  d  =  6 ; 
+#19 		if ( b  ==  5 )  { 
+#20 			d  =  7 ; 
+#21 			b  =  7 ; 
+#22 		 } 
+#23 	 } 
+#24  } 

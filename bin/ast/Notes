@@ -1,0 +1,88 @@
+http://docs.oracle.com/javase/specs/jls/se8/html/index.html
+http://www.slideshare.net/JamundFerguson/ui-40829744
+http://stackoverflow.com/questions/10720961/how-to-parse-bad-html
+Time Worked:
+	Built Up Hours: 30
+	
+	Thursday:
+		11:00 - 
+	
+To Do:
+	I'm thinking the way to handle this is when I'm building a statement or node in buildAST() and an exception arises
+	from somewhere, I take note of it, pretend it was successful, then move on to the next statement.
+	
+	Maybe look for specific exceptions so you know what went wrong.
+	
+	Types of bad code:
+		Missing vital word(s)
+		Extra word(s) that don't fit
+		Wrong word (missing the vital word, has an extra word that doesn't fit)
+	
+	
+	
+Questions:
+	How to look for patterns that the user defines? Should I just write code for cases as we think of them or
+	try to come up with a general purpose solution?
+
+	What do you want to do with bad code? Do you want WebTA to find it automatically and
+	come up with the best error report it can? How would we look at bad code to see if it's
+	mostly good code?
+	
+	How do I want my reader(parser is not the right term) to function? Give Leo some ideas and see what he likes.
+	Should I build methods that look for specific patterns?
+	Should I build a method that looks at one type of node (user defined or not) for a pattern (like a missing Expr)?
+
+Ideas:
+	When reading bad code, bundle up the minimal amount of garbage necessary.
+	Such as, public static main(String[] args), just bundle up the missing void as
+	bad and move on. Try to read as much code as possible, don't let anything break
+	the AST.
+	
+	How do I handle reading in all the possible methods for each object?
+	For example String has a length() method and many others. - Use reflection
+	
+	VarDecl seems to be able to handle it just fine, but making TypeDecl might make parsing easier...
+	
+
+
+
+	
+Time Archive:
+	Sunday:
+		10:40 - 3:40
+		4:00 - 5:00
+	Monday:
+		8:00 - 10:00
+		10:45 - 12:45
+	Tuesday:
+		7:00 - 9:00
+		4:15 - 5:15
+	Thursday:
+		2:15 - 5:15
+	Friday:
+		8:00 - 12:00
+		
+	Sunday:
+		11:15 - 4:15
+	Monday:
+		12:30 - 2:30
+		4:25 - 5:25
+	Tuesday:
+		7:00 - 9:00
+		4:15 - 5:15
+	Friday:
+		9:00 - 9:30
+		9:50 - 10:20
+		10:20 - 2:20
+	Saturday:
+		2:50 - 7:50
+	
+	Sunday:
+		11:00 - 4:00
+	Tuesday:
+		11:05 - 12:05
+	Thursday:
+		11:00 - 12:00
+	Friday:
+		7:40 - 8:40
+		9:15 - 11:15

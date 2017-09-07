@@ -1,0 +1,17 @@
+#1 public class badcode  { 
+#2 
+#3 	int x  =  5
+#4 
+#5 	 //System.out.println("Fail");
+#6 
+#7 	 //In Class Body Test
+#8 
+#9 	public static void main ( String args [  ]  )   { 
+#10 		int y  =  5 ;  //Test
+#11 		int z  =  10 ;  //Test2
+#12 
+#13 		 //Test3
+#14 		
+#15 		 /*Test4*/ 
+#16 	 } 
+#17  } 
